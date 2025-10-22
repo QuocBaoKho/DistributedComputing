@@ -213,7 +213,7 @@ function App() {
             onChange={(e) => setInputNumber(e.target.value)}
             min="1"
             max="1000"
-            className="w-full sm:w-32 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 transition duration-150"
+            className="w-full sm:w-32 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 transition duration-150 text-black"
             disabled={state.status === "working"}
           />
           <button
@@ -223,7 +223,7 @@ function App() {
               inputNumber < 1 ||
               inputNumber > 1000
             }
-            className={`flex items-center justify-center p-3 rounded-lg text-black font-bold transition duration-300 transform shadow-md
+            className={`flex items-center justify-center p-3 rounded-lg text-black font-bold transition duration-300 transform shadow-md text-white
               ${
                 state.status === "working"
                   ? "bg-gray-400 cursor-not-allowed"
